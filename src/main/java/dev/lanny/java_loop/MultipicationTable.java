@@ -8,7 +8,7 @@ public class MultipicationTable {
     public List<String> generateTable(int n) {
         List<String> table = new ArrayList<>();
         for (int i = 1; i <= 10; i++) {
-            table.add(n + " x " + i + " = " + n * i);
+            table.add(String.format("%d x %d = %d", n, i, n * i));
         }
         return table;
     }
